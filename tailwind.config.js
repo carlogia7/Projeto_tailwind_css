@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monda: ['Monda  ']
+        monda: ['Monda']
       },
       colors: {
         'azul-tailwind': '#38bdf8',
