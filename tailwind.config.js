@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monda: ['Monda']
+        monda: ['Monda'],
+        tauri: ['Tauri'],
       },
       colors: {
         'azul-tailwind': '#38bdf8',
+        'roxo-banner': '#6362fb',
       }
     },
   },
