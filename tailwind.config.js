@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      'custom': '1400px',
-    },
     extend: {
       fontFamily: {
         monda: ['Monda'],
@@ -13,7 +10,15 @@ module.exports = {
       colors: {
         'azul-tailwind': '#38bdf8',
         'roxo-banner': '#6362fb',
-      }
+      },
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      'custom': '1400px',
     },
   },
   plugins: [],
