@@ -15,27 +15,27 @@
 <body>
     <main>
         <div class="relative">
-            <img src="images/tailwind_banner.png" style="height: 80vh; width: 100%;" alt="Banner Tailwind Grande">
+            <img class="object-cover md:object-fill h-[80vh] w-full" src="images/tailwind_banner.png" alt="Banner Tailwind Grande">
             <div class="absolute top-10 left-32 flex items-center">
                 <img class="h-10 w-30 pr-2" src="images/logo_tailwind.png" alt="Logo Tailwind CSS">
                 <p class="font-monda text-azul-tailwind">Tailwind CSS start-up</p>
             </div>
-            <div class="text-white font-tauri w-2/4 flex-col absolute top-60 left-32 flex">
+            <div class="text-white font-tauri w-10/12 flex-col absolute top-40 left-10 text-center md:top-60 md:w-2/4 md:left-32 md:text-left">
                 <p class="text-lg text-roxo-banner">O ÚNICO CURSO TAILWIND CSS QUE VOCÊ IRÁ PRECISAR NA VIDA</p>
                 <br>
-                <h1 class="text-6xl">Aprenda <span class="text-roxo-banner">Tailwind</span> e conquiste essa framework</h1>
+                <h1 class="text-4xl md:text-6xl">Aprenda <span class="text-roxo-banner">Tailwind</span> e conquiste essa framework</h1>
                 <br>
                 <p class="text-lg">Entenda porque Tailwind é uma das melhores frameworks de CSS e como você pode ser um dos primeiros a surfar essa onda.</p>
             </div>
         </div>
-        <div class="ml-32 mt-6 pb-36">
-            <h1 class="font-tauri text-5xl tracking-wider mb-16">Assista ao vídeo exclusivo e descubra:</h1>
+        <div class="ml-10 mt-6 pb-36 custom:ml-32"> <!-- BUG -->
+            <h1 class="font-tauri font-bold text-3xl tracking-wider mb-16 md:text-5xl">Assista ao vídeo exclusivo e descubra:</h1>
             <div class="grid gap-7">
                 <div class="ml-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>                      
-                    <p class="pl-4 text-zinc-500">Quanto dinheiro tem envolvido nesta área</p>
+                    <p class="pl-4 text-zinc-500">Quanto dinheiro tem  envolvido nesta área</p>
                 </div>
                 <div class="ml-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -57,8 +57,8 @@
                 </div>
             </div>
             <button class="font-tauri font-bold text-2xl tracking-wide items-center mt-10 border-x-[40px] border-y-[6px] border-roxo-banner rounded-full bg-roxo-banner hover:text-white hover:transition duration-500 ease-in-out">Fazer inscrição</button>
-            <div class="relative">
-                <iframe width="550" height="300" class="absolute bottom-0 right-80" src="https://www.youtube.com/embed/DenUCuq4G04" poster="https://i.ytimg.com/vi/1qH3wAtX4So/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=" controls></iframe>
+            <div class="absolute custom:relative">
+                <iframe class="custom:w-[550px] custom:h-[300px] w-[500px] h-[300px] custom:absolute relative -bottom-4 right-0 custom:bottom-0 custom:right-60" src="https://www.youtube.com/embed/DenUCuq4G04" poster="https://i.ytimg.com/vi/1qH3wAtX4So/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=" controls></iframe>
             </div>
         </div>
         <div class="grid grid-cols-3 gap-4 px-28 py-8">
@@ -100,9 +100,9 @@
         </div>
         <div class="flex w-full items-center place-content-center">
             <div class="space-y-6 text-center tracking-wider mb-24">
-                <p class="text-roxo-banner font-tauri text-2xl">CERTIFICADO DE CONCLUSÃO</p>
-                <h1 class="text-5xl font-bold font-monda">Tenha seu certificado do curso | Tailwind CSS</h1>
-                <img src="images/certificado.png" class="w-3/5 h-3/4 mx-auto"alt="Certificado do Curso Tailwind CSS">
+                <p class="text-roxo-banner font-tauri lg:text-2xl md:text-xl">CERTIFICADO DE CONCLUSÃO</p>
+                <h1 class="lg:text-5xl md:text-3xl sm:text-2xl font-bold font-monda">Tenha seu certificado do curso | Tailwind CSS</h1>
+                <img src="images/certificado.png" class="h-3/4 mx-auto sm:w-2/3 md:w-2/3 w-4/5"alt="Certificado do Curso Tailwind CSS">
             </div>
         </div>
         <footer class="bg-gradient-to-b from-blue-950 to-indigo-600">

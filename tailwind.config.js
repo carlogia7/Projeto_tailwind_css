@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      'custom': '1400px',
+    },
     extend: {
       fontFamily: {
         monda: ['Monda'],
