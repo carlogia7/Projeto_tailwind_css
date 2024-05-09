@@ -560,8 +560,8 @@ video {
   left: 2.5rem;
 }
 
-.left-32 {
-  left: 8rem;
+.left-28 {
+  left: 7rem;
 }
 
 .right-0 {
@@ -576,8 +576,24 @@ video {
   top: 10rem;
 }
 
+.-right-0 {
+  right: -0px;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .m-3 {
   margin: 0.75rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -621,12 +637,32 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mt-52 {
+  margin-top: 13rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -645,13 +681,6 @@ video {
   height: 2rem;
 }
 
-<<<<<<< HEAD
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-=======
->>>>>>> 27971274d1ee211fbbe3fd55c011c2a66416f7c2
 .h-\[300px\] {
   height: 300px;
 }
@@ -686,6 +715,38 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[470px\] {
+  width: 470px;
+}
+
+.w-\[440px\] {
+  width: 440px;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
 }
 
 .grid-cols-3 {
@@ -848,6 +909,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -963,6 +1028,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:-right-5 {
+    right: -1.25rem;
+  }
+
   .sm\:w-2\/3 {
     width: 66.666667%;
   }
@@ -982,12 +1051,28 @@ video {
     top: 15rem;
   }
 
+  .md\:-right-5 {
+    right: -1.25rem;
+  }
+
+  .md\:mt-80 {
+    margin-top: 20rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
 
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:object-fill {
@@ -1021,6 +1106,34 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-20 {
+    right: 5rem;
+  }
+
+  .lg\:right-40 {
+    right: 10rem;
+  }
+
+  .lg\:-right-40 {
+    right: -10rem;
+  }
+
+  .lg\:-right-20 {
+    right: -5rem;
+  }
+
+  .lg\:-right-10 {
+    right: -2.5rem;
+  }
+
+  .lg\:-right-5 {
+    right: -1.25rem;
+  }
+
+  .lg\:-right-2 {
+    right: -0.5rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1049,8 +1162,20 @@ video {
     right: 15rem;
   }
 
+  .custom\:right-40 {
+    right: 10rem;
+  }
+
   .custom\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .custom\:mt-80 {
+    margin-top: 20rem;
+  }
+
+  .custom\:mt-0 {
+    margin-top: 0px;
   }
 
   .custom\:h-\[300px\] {
